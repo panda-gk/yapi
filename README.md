@@ -17,7 +17,6 @@ nrm add yw http://registry.npm.ywwl.org/
 
 nrm use yw
 
-npm i @yowant/yfeapi2ts -g
 
 ```
 
@@ -26,7 +25,6 @@ npm i @yowant/yfeapi2ts -g
 ```
 npm i ynpm -g
 
-ynpm i @yowant/yfeapi2ts -g
 ```
 
 

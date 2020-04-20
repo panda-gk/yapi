@@ -1,6 +1,6 @@
 {
-  "name": "@yowant/yfeapi2ts",
-  "version": "1.0.6",
+  "name": "yfeapi2ts",
+  "version": "1.0.0",
   "description": "yapi 输出到前端项目中api ts & js",
   "main": "client/index.js",
   "module": "client/index.mjs",
