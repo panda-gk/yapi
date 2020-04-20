@@ -1,0 +1,11 @@
+*.log
+node_modules
+.DS_Store
+coverage
+
+lib
+client
+
+/api
+.tmp*
+*_cache
