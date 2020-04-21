@@ -13,17 +13,10 @@
 1. 使用nrm(nrm使用方式 自行百度)
 ```
 npm i nrm -g
-nrm add yw http://registry.npm.ywwl.org/
 
-nrm use yw
+npm i gbbyapi -g 
 
-
-```
-
-2. 使用ynpm
-
-```
-npm i ynpm -g
+gbbyapi init 
 
 ```
 
