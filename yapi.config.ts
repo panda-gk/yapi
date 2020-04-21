@@ -2,13 +2,12 @@
 
 const config = {
   target: 'ts',
-  serverUrl: 'http://yapi.mockuai.com',
+  serverUrl: 'http://yapi.ywwl.org',
   outputFilePath: 'api',
-  projectId: '1434',
+  projectId: '24',
   UM_distinctid: "171637f0112366-06894cf3e07803-15396555-fa000-171637f0113813",
-  _yapi_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjcxNiwiaWF0IjoxNTg3MzQ0Mjg0LCJleHAiOjE1ODc5NDkwODR9.mXDIFHQbX3SAM73Szc_FrSvYCZUlXCQrZH5qt8iKZHk',
-  _yapi_uid: '716',
-  generateApiName: (pdth, id) => `id${id}`,
+  _yapi_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjE4LCJpYXQiOjE1NTY1MDYyMTUsImV4cCI6MTU1NzExMTAxNX0.ADmz2HEE6hKoe1DP_U2QtyKSSEURLf5soGKRNyJkX_o',
+  _yapi_uid: '18',
   generateApiFileCode: (api) => {
     const arr = [
       `
