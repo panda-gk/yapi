@@ -1,4 +1,4 @@
-# yfeapi2ts
+# yapi
 
 ##### 一个根据yapi文档自动生成前端api接口代码的工具，提升效率
 
@@ -29,7 +29,7 @@ yapi init
  - 2、 生成 yapi.config.ts 文件配置到项目
 
   `yapi init`
-  到当前开发的项目根目录（与package.json平级）运行该命令，如果当前目录已存在`yfeapi2ts.config.ts` 则会提示是否覆盖，没有则会创建，具体配置说明:
+  到当前开发的项目根目录（与package.json平级）运行该命令，如果当前目录已存在`yapi.config.ts` 则会提示是否覆盖，没有则会创建，具体配置说明:
   ```
   export interface ServerConfig {
    /**
@@ -200,11 +200,11 @@ export default config
   一般来说 generateApiFileCode 方法需要自己实现一下，组装拼接出符合自己期望的 接口代码格式
 
  - 3、生成代码
-  `yfeapi2ts`
+  `yapi`
   运行该命令 会根据步骤2的配置文件，生产出api（outputFilePath）文件夹，该文件夹下`index.ts`作为所有接口的导出口，供项目中导入使用
 
- - 4、查看接口变动日志`yfeapi2ts changelog`
+ - 4、查看接口变动日志`yapi changelog`
 
- - 5、查看版本号 `yfeapi2ts version`
+ - 5、查看版本号 `yapi version`
 
 ### feature
