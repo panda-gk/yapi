@@ -240,6 +240,8 @@ export interface ServerConfig {
   _yapi_token: string,
   /** cookie _yapi_uid */
   _yapi_uid: string,
+  // cookie UM_distinctid
+  UM_distinctid: string,
   /**是否自动开启changelog视图 */
   changelog: boolean,
   /** api.d.ts 全局声明的命名空间 会包含所有的接口interface 默认值 YapiTypes */

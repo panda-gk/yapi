@@ -16,19 +16,19 @@ npm i nrm -g
 
 npm i gbbyapi -g 
 
-gbbyapi init 
+yapi init 
 
 ```
 
 
-安装完成后可以检查下环境中是否有 `yfeapi2ts`
+安装完成后可以检查下环境中是否有 `yapi`
 
 
 ## 使用方法
 
- - 2、 生成 yfeapi2ts.config.ts 文件配置到项目
+ - 2、 生成 yapi.config.ts 文件配置到项目
 
-  `yfeapi2ts init`
+  `yapi init`
   到当前开发的项目根目录（与package.json平级）运行该命令，如果当前目录已存在`yfeapi2ts.config.ts` 则会提示是否覆盖，没有则会创建，具体配置说明:
   ```
   export interface ServerConfig {

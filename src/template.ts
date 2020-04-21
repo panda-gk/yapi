@@ -1,7 +1,8 @@
-export const configTemplate = `
-import { ServerConfig } from 'ywapi2ts'
+// import { ServerConfig } from 'ywapi2ts'
 
-const config: ServerConfig = {
+export const configTemplate = `
+
+const config = {
   target: 'ts',
   serverUrl: 'http://yapi.ywwl.org',
   outputFilePath: 'api',

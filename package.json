@@ -5,14 +5,14 @@
   "main": "client/index.js",
   "module": "client/index.mjs",
   "typing": "client/index.d.ts",
-  "author": "jindajian",
+  "author": "gbb",
   "bin": {
-    "yfeapi2ts": "lib/cli.js"
+    "yapi": "lib/cli.js"
   },
   "license": "MIT",
   "keywords": [
-    "yfeapi2ts",
-    "yfeapi2js",
+    "yapi2ts",
+    "yapi2js",
     "yapi",
     "typescript",
     "typing"

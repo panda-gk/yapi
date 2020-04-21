@@ -44,7 +44,7 @@ TSNode.register({
 
 ;(async () => {
   const pkg = require('../package.json')
-  const configFile = path.join(process.cwd(), 'yfeapi2ts.config.ts')
+  const configFile = path.join(process.cwd(), 'yapi.config.ts')
 
   cli
     .version(pkg.version)
