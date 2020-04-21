@@ -5,6 +5,7 @@ const config = {
   target: 'js',
   serverUrl: 'http://yapi.mockuai.com',
   outputFilePath: 'api',
+  UM_distinctid: '171637f0112366-06894cf3e07803-15396555-fa000-171637f0113813',
   projectId: '1434',
   _yapi_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjcxNiwiaWF0IjoxNTg3MzQ0Mjg0LCJleHAiOjE1ODc5NDkwODR9.mXDIFHQbX3SAM73Szc_FrSvYCZUlXCQrZH5qt8iKZHk',
   _yapi_uid: '716',

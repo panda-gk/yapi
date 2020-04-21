@@ -1,6 +1,6 @@
 {
-  "name": "yfeapi2ts",
-  "version": "1.0.0",
+  "name": "yapi",
+  "version": "1.0.1",
   "description": "yapi 输出到前端项目中api ts & js",
   "main": "client/index.js",
   "module": "client/index.mjs",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "keywords": [
     "yfeapi2ts",
+    "yfeapi2js",
     "yapi",
     "typescript",
     "typing"

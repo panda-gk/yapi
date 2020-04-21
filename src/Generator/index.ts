@@ -39,11 +39,11 @@ export class Generator {
 
   async fetchApi(projectConfig = this.config): Promise<Types.ApiJson> {
 
-    const {_yapi_token, _yapi_uid, projectId, serverUrl} = projectConfig
+    const {_yapi_token, _yapi_uid, projectId, serverUrl, UM_distinctid} = projectConfig
     const url = `${serverUrl}/api/plugin/export?type=json&pid=${projectId}&status=all&isWiki=false`
     console.log(url)
     const headers = {
-      'Cookie': `UM_distinctid=171637f0112366-06894cf3e07803-15396555-fa000-171637f0113813;_yapi_token=${_yapi_token};_yapi_uid=${_yapi_uid}`
+      'Cookie': `UM_distinctid=${UM_distinctid};_yapi_token=${_yapi_token};_yapi_uid=${_yapi_uid}`
     }
     console.log(url)
     const res = await request.get(url, {
