@@ -41,7 +41,6 @@ export class Generator {
 
     const {_yapi_token, _yapi_uid, projectId, serverUrl, UM_distinctid} = projectConfig
     const url = `${serverUrl}/api/plugin/export?type=json&pid=${projectId}&status=all&isWiki=false`
-    console.log(url)
     const headers = {
       'Cookie': `UM_distinctid=${UM_distinctid};_yapi_token=${_yapi_token};_yapi_uid=${_yapi_uid}`
     }
@@ -50,7 +49,6 @@ export class Generator {
       json: true,
       headers: headers,
     })
-    console.log(res)
     return res
 
   }

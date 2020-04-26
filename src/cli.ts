@@ -71,7 +71,7 @@ TSNode.register({
           break
 
         case 'version':
-          console.log(`当前 yfeapi2ts版本号 ${pkg.version}`)
+          console.log(`当前 yapi版本号 ${pkg.version}`)
           break
 
         default:

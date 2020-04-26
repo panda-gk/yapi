@@ -26,7 +26,7 @@ const config = {
       \`
       export default (data?): Serve<
         \${api.reqInterfaceName},
-        \${api.resInterfaceName}['data']
+        any
       > => request({
         method: '\${api.method}',
         url: '\${api.path}',
