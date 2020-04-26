@@ -44,7 +44,6 @@ export class Generator {
     const headers = {
       'Cookie': `UM_distinctid=${UM_distinctid};_yapi_token=${_yapi_token};_yapi_uid=${_yapi_uid}`
     }
-    console.log(url)
     const res = await request.get(url, {
       json: true,
       headers: headers,
@@ -60,6 +59,7 @@ export class Generator {
       case Types.Method.GET:
       case Types.Method.HEAD:
       case Types.Method.OPTIONS:
+        // 获得属性定义列表的 JSONSchema 对象
         jsonSchema = propDefinitionsToJsonSchema(
           interfaceInfo.req_query.map<Types.PropDefinition>(item => ({
             name: item.name,
@@ -73,6 +73,7 @@ export class Generator {
       default:
         switch(interfaceInfo.req_body_type) {
           case Types.RequestBodyType.form:
+            // 获得属性定义列表的 JSONSchema 对象
             jsonSchema = propDefinitionsToJsonSchema(
               interfaceInfo.req_body_form.map<Types.PropDefinition>(item => ({
                 name: item.name,
@@ -122,7 +123,7 @@ export class Generator {
     if (dataKey && jsonSchema && jsonSchema.properties && jsonSchema.properties[dataKey]) {
       jsonSchema = jsonSchema.properties[dataKey]
     }
-
+    // 生成ts定义
     return jsonSchemaToType(jsonSchema, typeName)
   }
 
