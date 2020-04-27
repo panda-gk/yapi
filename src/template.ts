@@ -4,7 +4,7 @@ export const configTemplate = `
 
 const config = {
   target: 'ts',
-  serverUrl: 'http://yapi.ywwl.org',
+  serverUrl: 'http://yapi.mockuai.com',
   outputFilePath: 'src/api',
   projectId: '24',
   UM_distinctid: "171637f0112366-06894cf3e07803-15396555-fa000-171637f0113813",
@@ -26,7 +26,7 @@ const config = {
       \`
       export default (data?): Serve<
         \${api.reqInterfaceName},
-        any
+        \${api.resInterfaceName}['data']
       > => request({
         method: '\${api.method}',
         url: '\${api.path}',
@@ -37,7 +37,7 @@ const config = {
             return 'data'
           }
         })()}
-      })
+      }) as Promise<any> 
       \`,
     ]
     return arr.join(\`
