@@ -6,10 +6,10 @@ const config = {
   target: 'ts',
   serverUrl: 'http://yapi.mockuai.com',
   outputFilePath: 'src/api',
-  projectId: '24',
+  projectId: '1434',
   UM_distinctid: "171637f0112366-06894cf3e07803-15396555-fa000-171637f0113813",
-  _yapi_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjE4LCJpYXQiOjE1NTY1MDYyMTUsImV4cCI6MTU1NzExMTAxNX0.ADmz2HEE6hKoe1DP_U2QtyKSSEURLf5soGKRNyJkX_o',
-  _yapi_uid: '18',
+  _yapi_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjcxNiwiaWF0IjoxNTg3OTU5MjY3LCJleHAiOjE1ODg1NjQwNjd9.L3Nd9T-1kl3bxe0Dvt7eddspqmw91PkuNbku3bTKoTM',
+  _yapi_uid: '716',
   generateApiName: (pdth, id) => id,
   generateApiFileCode: (api) => {
     const arr = [
@@ -24,10 +24,10 @@ const config = {
       api.requestInterface,
       api.responseInterface,
       \`
-      export default (data?): Serve<
+      const http: Serve<
         \${api.reqInterfaceName},
         \${api.resInterfaceName}['data']
-      > => request({
+      > = (data?) => request({
         method: '\${api.method}',
         url: '\${api.path}',
         data: \${(() => {
@@ -38,6 +38,8 @@ const config = {
           }
         })()}
       }) as Promise<any> 
+      export default http;
+
       \`,
     ]
     return arr.join(\`

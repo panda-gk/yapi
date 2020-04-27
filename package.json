@@ -1,6 +1,6 @@
 {
   "name": "gbbyapi",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "yapi 输出到前端项目中api ts & js",
   "main": "client/index.js",
   "module": "client/index.mjs",
